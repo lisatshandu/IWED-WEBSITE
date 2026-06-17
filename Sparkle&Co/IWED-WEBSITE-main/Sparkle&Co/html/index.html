@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+        <title>Sparkle_Co</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+
+<body>
+   <header>
+    <nav> 
+    <a href="index.html">Home Page</a>
+    <a href="about.html">About Us</a>
+    <a href="products_services.html">Our Products</a>
+    <a href="contact.html">Visit Us</a>
+    <a href="gallery.html">Gallery</a>
+    </nav>
+    </header>
+
+<body>
+    <form id="myForm" onsubmit="return validationOfForm()">
+
+        <label>NAME:</label><br>
+        <input type="text" id="name" placeholder="Enter your full name"><br><br>
+
+        <label>EMAIL:</label><br>
+        <input type="email" id="email" placeholder="Enter your email"><br><br>
+
+        <label>FEEDBACK:</label><br>
+        <textarea id="feedback" placeholder="Enter your feedback"></textarea><br><br>
+
+        <label>GENDER:</label><br>
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="male"> Male
+        <br><br>
+        
+        <label> DATE OF BIRTH:</label><br>
+        <input type="date" id="dob"><br><br>
+
+        <label>PASSWORD:</label><br>
+        <input type="password" id="password" placeholder="Enter your password"><br><br>
+
+        <input type="submit" value="Submit">
+        <button type=submit>SUBMIT</button>
+        
+        
+
+    </form>
+    <script>
+
+function validationOfForm() {
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let feedback = document.getElementById("feedback").value;
+  let password = document.getElementById("password").value;
+  let dob = document.getElementById("dob").value;
+
+if (name == ""){
+alert("Name is required");
+return false;
+}
+
+if (email == ""){
+alert("Email is required");
+return false;
+}
+
+if (feedback == ""){
+alert("Feedback is required");
+return false;
+}
+
+if (password == ""){
+alert("Password is required");
+return false;
+}
+
+if (dob == ""){
+alert("Date of birth is required");
+return false;
+}
+
+else{
+    alert("form is valid");
+}
+
+return true;
+
+
+
+
+
+}
+
+
+    </script>
+<script src="JS.js"></script>
+
+</body>
+
+
+
+
+
+<main>
+<h1><b>SPARKLE & CO</b></h1>
+<p> Timeless pieces, everyday elegance</p>
+<img src="../images/logo.png.jpg" alt="Home Image">
+</main>
+<footer>
+        <p>&copy; 2026 Sparkle_Co | Cape Town, South Africa</p>
+    </footer>
+</body>
+</html>
+
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+        <title>Sparkle_Co</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    </head>
+    <body>
+        <h1 id="heading"> Hi this is us making use of jquery</h1>
+        <button id="btn"> change the heading </button>
+
+    <script>
+        $(function (){ 
+            $("#btn").click(function(){ 
+                $("#heading").text("Welcome to jQuery");
+            });
+        });
+    
+
+        
+
+    </script>
+
+     <form id="myForm" onsubmit="return validationOfForm()">
+
+        <label>NAME:</label><br>
+        <input type="text" id="name" placeholder="Enter your full name"><br><br>
+
+        <label>EMAIL:</label><br>
+        <input type="email" id="email" placeholder="Enter your email"><br><br>
+
+        <label>FEEDBACK:</label><br>
+        <textarea id="feedback" placeholder="Enter your feedback"></textarea><br><br>
+
+        <label>GENDER:</label><br>
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="male"> Male
+        <br><br>
+        
+        <label> DATE OF BIRTH:</label><br>
+        <input type="date" id="dob"><br><br>
+
+        <label>PASSWORD:</label><br>
+        <input type="password" id="password" placeholder="Enter your password"><br><br>
+
+        <input type="submit" value="Submit">
+        <button type=submit>SUBMIT</button>
+        
+        
+
+    </form>
+    <script>
+$(document).ready(function(){
+
+
+    $("#myform").submit(function (event) {
+
+    let name = $("#name").val();
+    let email = $("#email").val();
+    let feedback = $("#feedback").val();
+    let password = $("#password").val();
+    let dob = $("#dob").val();
+
+    if (name == "") {
+        alert("Name is required");
+        event.preventDefault();
+        return;
+    }
+
+    if (email == "") {
+        alert("Email is required");
+        event.preventDefault();
+        return;
+    }
+
+    if (feedback == "") {
+        alert("Feedback is required");
+        event.preventDefault();
+        return;
+    }
+
+    if (password == "") {
+        alert("Password is required");
+        event.preventDefault();
+        return;
+    }
+
+    if (dob == "") {
+        alert("Date of Birth is required");
+        event.preventDefault();
+        return;
+    }
+
+    alert("Form is valid");
+});
+```
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+    </body>
+</html>
